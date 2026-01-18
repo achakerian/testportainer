@@ -27,8 +27,9 @@ const server = http.createServer((req, res) => {
       </style>
     </head>
     <body>
-      <h1 class="success">Container is running!</h1>
+      <h1 class="success">Container is running! (v2)</h1>
       <p>Your Portainer stack deployed successfully on ASUSTOR 5405T.</p>
+      <p><strong>CI/CD Test:</strong> This update was deployed automatically via Portainer polling.</p>
       <h3>Environment Info:</h3>
       <pre>
 Hostname: ${process.env.HOSTNAME || 'unknown'}
