@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  testapp:
+    build: .
+    container_name: testportainer
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    restart: unless-stopped
